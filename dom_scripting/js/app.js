@@ -98,11 +98,35 @@ elemento = primerLi.hasAttribute('data-id');
 
 
 
-console.log(elemento);
+//console.log(elemento);
 
 
 
 
+//EVENT LISTENER CLICK 
+document.querySelector("#submit-buscador").addEventListener('click', function(e){
+
+    e.preventDefault(); //para prevenir que un formulario haga action
+
+    alert("Buscando...");
+});
+
+//cambiando texto al hacer click
+document.querySelector("#nuevoEncabezado").addEventListener('click', function(e){
+    
+    e.target.innerText = "Nuevo Encabezado";
+    
+});
+
+
+//OTROS EVENTOS CON MOUSE
+//"dblclick" -> docle clic
+//"mouseenter" -> al estar encima del boton
+//"mouseleave" -> cuando sales del boton
+//"mouseover" -> al estar encima del boton
+//"mousedow" -> aldejar presionado click
+//"mouseup" -> al soltar e click
+//"mousemove" -> al mover el mause por el objeto
 
 
     
