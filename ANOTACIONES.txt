@@ -1,0 +1,190 @@
+Visual Staudio Code:
+Extensiones:
+
+-live server
+-Brecket pair colorizer
+
+
+
+---------------------------
+
+
+MEtodos Arrays()
+
+variable.push("valor"); -> agregar otro registro al final de un array
+variable.unshift(valor);-> agragra un registro al principio de un array
+variable.pop();-> elimina el ultimo reg del array
+variable.shift(); elimina el primer reg del array
+variable.splice(posicion,elemento); -> elimina el elemento indicado
+variable.reverse(); -> revierte la posiciones de ascendente a descendente.
+variable.concat(varible2);-> une dos arreglos
+variable.sort(); -> ordena en orden alfabetico un arreglo
+
+variable.sort(function(x,y){
+	return x - y ;
+
+});  -> ordenanr de menor a mayor(numeros)
+
+
+
+METODOS OBJETOS()
+
+
+
+
+
+
+
+
+
+
+FUNCIONES:
+
+---IIFE---
+
+(function(recibeParametro){
+	
+
+
+})(parametro);
+
+Son funciones que se invocan inmediatamente
+
+
+---METODO DE PROPIEDAD---
+Cuando una funcion se pone dentro de un objeto
+
+
+const musica = {
+	reproducir: function(){
+	
+}
+
+
+Tambien se pueden crear metodos fuera de la funcion.
+Su principal ventaja es mantener ciertos metodos agrupados.
+
+
+
+
+Ejecutar funcion en determinado tiempo.
+
+setTimeout(function(){
+	mensaje, despues de x tiempo
+
+},3000);
+
+
+
+Para verificar si una funcion existe y el codigo no se detenga
+try{}catch{}
+
+
+FECHAS METODOS
+
+obtener mes
+
+date.getMonth();-> mes actual
+date.getDate(); -> dia actual
+date.getDay(); ->dia actual
+date.getFullYear(); -> año actual
+date.getMinutes(); -> minutos de la hora actual
+date.getHours(); ->hora actual
+
+
+
+
+
+
+
+IF ELSE EN UNA LINEA
+
+(condicion == comparacion ? "Correcto"  : "caso contrario")
+
+
+
+
+
+Switch CASE
+
+switch(variableacomparar){
+
+	case "comparacion":
+		mensaje
+	    break;
+	case "comparacion":
+		mensaje
+	    break;
+	default:
+		caso contrario
+	     break;
+
+}
+
+
+
+
+
+
+
+RECORRER ARREGLO DE OBJETOS CON MAPS
+
+arreglo.map(funtion(arreglo){
+
+	return arreglo.objeto;
+
+});
+
+
+
+otra forma de recorrer un objeto
+
+for(let variable in nombreObjeto){
+
+	variable ->indicador   nombreObjeto[variable ]-> informacion
+
+}
+
+
+
+
+
+SCOPE EN JavaScript:
+
+
+scope funciones
+scope global
+scope bloque if else
+
+= hay que tener cuidado con las variables globales y de bloque
+
+
+
+
+
+DOM -> Document Object Model
+
+Son las etiquetas html, los atributos y los texteos
+
+
+documen; -> todo los elementos del tocumentos
+document.all;-> todos los elementos del documentos en otro ordwen
+document.head;-> solo la etiqueta head
+document.body; -> solo el body del documento
+document.doamin;-> el dominio del documento
+document.URL; -> url del sitio
+document.form; -> el formulario del documento
+document.form[0].id; -> un formulario con su respectivo id
+document.form[].className; -> todas las clases dentro de ese formulario
+document.form[].claa-list; -> lista de las clases
+document.images; -Z todas las imagenes dela pagina
+
+
+document.querySelector(); -> permite seleccionar algun id, class o etiqueta de html -> jquery
+document .getElementsByClassName(); -> acceder a unas clase
+document.get ElementsById(); -> acceder a un id
+
+
+se pueden combinar el querySelectorcon algun elementBy
+
+
