@@ -129,6 +129,53 @@ document.querySelector("#nuevoEncabezado").addEventListener('click', function(e)
 //"mousemove" -> al mover el mause por el objeto
 
 
+
+
+// EVENTO DE LOS INPUT
+
+const busqueda = document.querySelector("#buscador");
+
+//busqueda.addEventListener('keydown', obtenerEvento);// se ejecuta al presionar una tecla
+
+//busqueda.addEventListener('keyup', obtenerEvento);// se ejecuta al soltar una tecla
+
+//busqueda.addEventListener('keypress', obtenerEvento);// se ejecuta al presionar una tecla
+
+//busqueda.addEventListener('blur', obtenerEvento);// valida cuando se sale del formulario
+
+//busqueda.addEventListener('input', obtenerEvento);// todo en uno, se puede crear cualquier evento
+
+
+
+//EVENT BOBBLING  -> es cuando hay varios eventos en una de click q abarcan elementos hijos y padres
+
+// la mejor manera de evitarlo es con el DELEGATION
+
+document.body.addEventListener("click", comprobarElemento);
+
+//comprobaremos donde se esta haciendo click
+function comprobarElemento(e){
+    e.preventDefault();
+    
+    if(e.target.classList.contains('borrar-curso')){
+        e.target.parentElement.parentElement.remove();
+
+    }
+    if(e.target.classList.contains('agregar-carrito')){
+        console.log("Curso agregado");
+
+    }
+
+}
+
+
+
+
+
+function obtenerEvento(e){
+        //document.querySelector("#nuevoEncabezado").innerText = busqueda.value;
+        console.log(`EVENTO: ${e.type}`);
+}
     
 
 
