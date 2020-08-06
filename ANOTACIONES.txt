@@ -87,7 +87,7 @@ obtener mes
 date.getMonth();-> mes actual
 date.getDate(); -> dia actual
 date.getDay(); ->dia actual
-date.getFullYear(); -> aÒo actual
+date.getFullYear(); -> aÔøΩo actual
 date.getMinutes(); -> minutos de la hora actual
 date.getHours(); ->hora actual
 
@@ -186,5 +186,9 @@ document.get ElementsById(); -> acceder a un id
 
 
 se pueden combinar el querySelectorcon algun elementBy
+
+
+
+peque√±a prueba de conexion
 
 
